@@ -1,0 +1,332 @@
+/* ------------------------------------------------------------------------- */
+/* ----- Navigation Bar ---------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.top-nav-bar {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-home-icon {
+  padding: 25.5px 16.666px 22px; /* was 1em */
+  margin: 0;
+  height: 100%;
+}
+
+.logo-link {
+  margin: 0 auto;
+}
+
+.logo {
+  height: 50px; /* was 3em */
+}
+
+.hamburger {
+  border: none;
+  color: white;
+  font-size: 2em;
+  padding: 16.666px;
+  margin: 0;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ----- Upper Section ----------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+html {
+  background-color: #CCC;
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  border-top: #999 solid 1px;
+}
+
+.homepage-upper-section{
+  background-color: #E5DDDD;
+}
+
+h1, h2 {
+  font-size: .8em;
+  color: black;
+  padding: .7em;
+  line-height: 1;
+}
+
+.flex-container {
+  display: flex;
+  margin: 0 0 0.7em 0;
+}
+
+.upper-button {
+  background: white;
+  width: 45%;
+  text-align: center;
+  margin: 1em 2.5% .4em;
+  border: solid black 2px;
+}
+
+.upper-button p {
+  padding-top: 1.5em;
+  margin: 0;
+  color: white;
+}
+
+.upper-button h2 {
+  font-size: 1.25em;
+  margin: 0;
+  padding-bottom: 1.25em;
+  font-weight: 700;
+  color: white;
+}
+
+.upper-button-left {
+  background-image: url("../images/mobile-open-sign-blurred.jpg");
+  background-size: cover;
+}
+
+.upper-button-right {
+  background-image: url("../images/mobile-menu-blurred.jpg");
+  background-size: cover;
+}
+
+.we-deliver h2 {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1.5em;
+}
+
+.two-locations h2 {
+  display: none;
+}
+
+.photography img {
+  display: none;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ----- Vegetable Decoration ---------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.vegetable-decoration {
+  border: none;
+  background-image: url("../images/vegetable-bar-mobile.png");
+  background-size: cover;
+  padding: 2.5em 0;
+  display: fixed;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+/* ----- Lower Section ----------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+.home-navigation-buttons {
+  margin: 0;
+  padding: 0;
+}
+
+.home-navigation-buttons li {
+  list-style: none;
+}
+
+.home-navigation-buttons li a {
+  text-decoration: none;
+  color: #AAA;
+  display:block;
+  font-family: "Raleway", sans-serif;
+  background-color: black;
+  text-align: center;
+  padding: 2em 0;
+  border-bottom: white solid 2px;
+  border-top: white solid 2px;
+}
+
+.home-navigation-buttons li a:nth-child(1) {
+  border-top: none;
+}
+
+.home-navigation-buttons a:visited {
+  color: #AAA;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ----- Footer ------------------------------------------------------------ */
+/* ------------------------------------------------------------------------- */
+
+
+.wrap {
+  min-height: calc(100vh - 81.8333px);
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ----- Wide Queries ------------------------------------------------------ */
+/* ------------------------------------------------------------------------- */
+
+@media (min-width: 475px) {
+  .vegetable-decoration {
+    padding: 3.25em 0;
+  }
+}
+
+@media (min-width: 550px) {
+  .upper-button p {
+    padding-top: 2.75em;
+    font-size: 1.2em;
+  }
+
+  .upper-button h2 {
+    font-size: 1.5em;
+    padding-bottom: 2.75em;
+  }
+
+  .vegetable-decoration {
+    padding: 4em 0;
+  }
+
+  .greeting, .we-deliver {
+    font-size: 1.2em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .vegetable-decoration {
+    padding: 5em 0;
+  }
+  .home-navigation-buttons li a {
+    font-size: 1.5em;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+/* ----- Desktop ----------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+@media (min-width: 900px) {
+  .homepage-upper-section {
+    background: white;
+    margin: 0;
+  }
+  .desktop-box {
+    background: white;
+    padding: .5em 1em;
+    margin: 0;
+    margin-left: 0;
+    padding-bottom: 8em;
+    margin-bottom: -16em;
+  }
+  .greeting {
+    font-size: 1.9em;
+    border-bottom: #777 solid 2px;
+    padding-bottom: .25em;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin: .75em 3em 0;
+  }
+  .upper-button p {
+    padding-top: 1.3em;
+  }
+  .upper-button h2 {
+    padding-bottom: 3em;
+  }
+  .upper-button-left, .upper-button-right {
+    width: 200px;
+    height: 125px;
+    border: #99BB00 solid 3px;
+    margin: 1em;
+    border-radius: 10%;
+  }
+  .we-deliver {
+    font-size: 1.5em;
+  }
+  .we-deliver h2 {
+    padding-top: 0;
+  }
+  .two-locations h2 {
+    padding-bottom: 0;
+    padding-top: 1em;
+    display: block;
+  }
+  .homepage-upper-section hr {
+    display: none;
+  }
+  .vegetable-decoration-desktop {
+    border: none;
+    background-image: url("../images/vegetables-decoration.png");
+    background-size: cover;
+    padding: 8em 0;
+    display: fixed;
+    margin-top: 0;
+  }
+  .vegetable-decoration {
+    display: none;
+  }
+  .lower-section {
+    display: none;
+  }
+  .flex-bar {
+    background: black;
+    display: block;
+    width: 620px;
+    height: 375px;
+    padding: 2em 1em;
+    padding-left: 1.5em;
+    padding-bottom: 3em;
+  }
+  .photography {
+    padding-top: .5em;
+    position: relative;
+  }
+  .photography img {
+    position: absolute;
+    display: block;
+    width: 600px;
+    height: 390px;
+  }
+  .photography img:nth-of-type(6) {
+     -webkit-animation: xfade 21s 0s infinite;
+    animation: xfade 21s 0s infinite;
+  }
+  .photography img:nth-of-type(5) {
+    -webkit-animation: xfade 21s 7s infinite;
+    animation: xfade 21s 7s infinite;
+  }
+  .photography img:nth-of-type(4) {
+    -webkit-animation: xfade 21s 14s infinite;
+    animation: xfade 21s 14s infinite;
+  }
+  .photography img:nth-of-type(3) {
+     -webkit-animation: xfade 21s 0s infinite;
+    animation: xfade 21s 0s infinite;
+  }
+  .photography img:nth-of-type(2) {
+    -webkit-animation: xfade 21s 7s infinite;
+    animation: xfade 21s 7s infinite;
+  }
+  .photography img:nth-of-type(1) {
+    -webkit-animation: xfade 21s 14s infinite;
+    animation: xfade 21s 14s infinite;
+  }
+}

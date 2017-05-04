@@ -1,0 +1,594 @@
+html {
+  background: black;
+}
+
+hr {
+  width: 99vw;
+  padding: 0;
+  margin: 0 auto;
+  border: #DDD solid 1px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ----- Menu Header ------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.hero-wrapper {
+  background-image: url("../images/menu-header-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.university {
+  background-image: url('../images/university-menu-header-mobile.jpg');
+}
+
+.hero-wrapper-overlay {
+  background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.5), rgba(0,0,0,.4));
+}
+
+.location-name, .change-location {
+  margin: 0;
+  text-align: center;
+  color: #ccc;
+}
+
+.location-name {
+  padding-top: 2.5em;
+  margin-left: 38px;
+  font-size: 1em;
+}
+
+.change-location {
+  padding-top: .5em;
+  padding-bottom: 2.5em;
+  font-size: 1em;
+}
+
+h1 {
+  padding: 0;
+  padding-bottom: 10px;
+  font-size: 3em;
+  line-height: .5;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ----- Food Toggle Description ------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.toggle-description {
+  position: absolute;
+  color: #DDD;
+  font-family: "Raleway", sans-serif;
+  font-size: .75em;
+  left: 87%;
+  transform: translateX(-87%);
+  top: 93%;
+  transform: translateY(-93%);
+  padding-right: 5px
+}
+.toggle-description:before{
+  content:"";
+  width:0px;
+  height:0px;
+  border-top:18px solid transparent;
+  border-right: 26px solid #000;
+  position:absolute;
+  z-index: -1;
+  right: 100%;
+  top:-3px;
+}
+.toggle-description:after{
+  content:"";
+  width:0px;
+  height:0px;
+  border-top:18px solid #000;
+  border-right: 44px solid #000;
+  position:absolute;
+  z-index: -1;
+  left: 100%;
+  transform: translateX(-100%);
+  top:-3px;
+}
+
+.toggle-desc-underlay {
+  position: absolute;
+  color: #DDD;
+  font-family: "Raleway", sans-serif;
+  font-size: .75em;
+  left: 87%;
+  transform: translateX(-87%);
+  top: 91%;
+  transform: translateY(-91%);
+  padding-right: 5px
+}
+.toggle-desc-underlay:before{
+  content:"";
+  width:0px;
+  height:0px;
+  border-top:18px solid transparent;
+  border-right: 27px solid #DDD;
+  position:absolute;
+  right: 100%;
+  top:-2.5px;
+}
+.toggle-desc-underlay:after{
+  content:"";
+  width:0px;
+  height:0px;
+  border-top:17px solid #DDD;
+  border-right: 45px solid #DDD;
+  position:absolute;
+  left: 103%;
+  transform: translateX(-100%);
+  top:-2px;
+  z-index: -1;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ----- Food Type Toggles ------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.food-type-container{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.food-type-container button {
+  width: 22%;
+  background-color: transparent;
+  overflow: auto;
+  border: dotted #AAA 2px;
+  padding: 5px 0;
+  margin: 15px 4px;
+  border-radius: 15%;
+}
+
+.food-type-container button p {
+  padding: 5px 0 5px 0;
+  line-height: 1em;
+  color: #DDD;
+  margin: 0;
+  font-size: .5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ----- Food Category Toggles --------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.food-categories div h2 {
+  margin-left: auto;
+}
+
+.food-categories div button {
+  margin-left: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.food-category {
+  display: flex;
+  border-bottom: white solid 2px;
+  background: black;
+}
+
+h2 {
+  color: white;
+}
+
+.toggle-icon {
+  border: none;
+  color: white;
+  font-size: 2em;
+  padding: 16.666px;
+  margin: 0;
+  background: none;
+}
+
+.food-category h2, .toggle-icon {
+  width: 40%;
+}
+
+#salads {
+  background-image: url("../images/gd2go-menu-salad.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#wraps {
+  background-image: url("../images/gd2go-menu-wraps.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bowls {
+  background-image: url("../images/gd2go-menu-bowls.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#smoothies {
+  background-image: url("../images/gd2go-menu-smoothies.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#other {
+  background-image: url("../images/gd2go-menu-drinks.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: none;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ----- Food Items -------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.food-categories ul {
+  padding: 0 1em;
+  margin: 0;
+  background-image: url("../images/list-items-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.food-categories li {
+  background-color: white;
+  border: #99BB00 solid 4px;
+  margin: 1em 0;
+  list-style: none;
+  display: flex;
+
+  /* use JS to set padding-bottom to .5em */
+  /* use JS to set display to block */
+  /* Original margin = 1em 0; */
+}
+
+.food-categories img:nth-of-type(1) {
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin: auto 0;
+  border: #99BB00 solid 1px;
+
+  /* this declaration is meant for the food img. */
+
+  /* use JS to set margin to .5em */
+  /* use JS to set margin-bottom to 1.5em */
+  /* use JS to set width and height to 100px */
+  /* use JS to set border to #99BB00 solid 2px */
+}
+
+.food-categories h3 {
+  font-size: 1.1em;
+  text-align: center;
+  padding: 0 1em;
+  margin: auto;
+
+  /* use JS to set margin to :0 auto; */
+  /* use JS to set padding to .4em */
+  /* use JS to set padding-top to 1em */
+  /* use JS to set font-size to 1.4em */
+}
+
+.food-categories table {
+  display: none;
+  text-align: center;
+  margin-left: .7em;
+  margin-right: .5em;
+  margin-bottom: .75em;
+  padding: 0;
+  float: left;
+  clear: left;
+
+  /* use JS to display as block */
+}
+.food-categories table th, .food-categories table td {
+  background: white;
+  color: #446600;
+  padding: .2em .4em .1em;
+  font-family: "Lato", "Raleway", sans-serif;
+  border: none;
+}
+
+.food-categories p {
+  display: none;
+  font-size: 1em;
+  margin: .5em;
+  padding: 0 .5em;
+  text-align: center;
+  margin-left: 7.5em;
+
+  /* use JS to display as block */
+}
+.food-categories li p:nth-of-type(2) {
+  display: none;
+  font-size: 1em;
+  margin: 0 .9em;
+  font-family: "Rajdhani";
+  padding-bottom: .5em;
+
+  /* use JS to display as inline-block */
+}
+
+.food-categories hr {
+  width: 80vw;
+  margin: 1em;
+  border-bottom: #99BB00 solid 3px;
+  float: left;
+  display: none;
+
+  /* use JS to display as block */
+}
+
+.food-categories img:nth-of-type(2) {
+  width: 15%;
+  height: 5%;
+  margin: .75em;
+  margin-left: auto;
+  display: block;
+
+  /* this declaration is meant for the tap icon. */
+}
+
+#saladsIntro, #saladsOutro, #wrapsIntro, #wrapsOutro, #bowlsIntro, #bowlsOutro, #smoothiesIntro, #smoothiesOutro, #otherIntro, #otherOutro {
+  display: none;
+  background: white;
+  padding: .5em;
+}
+#saladsIntro p, #saladsOutro p, #wrapsIntro p, #wrapsOutro p, #bowlsIntro p, #bowlsOutro p, #smoothiesIntro p, #smoothiesOutro p, #otherIntro p, #otherOutro p {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.alt-menu-intro {
+  background: black;
+  padding: .5em 0;
+  border: #99BB00 solid 2px;
+  display: none;
+  margin: 0 1em;
+}
+.alt-menu-intro p {
+  color: white;
+  display: block;
+  margin: 0 auto;
+}
+
+#firstAltMenuIntro {
+  margin-top: 1em;
+}
+
+#justInCase {
+  background: white;
+  margin: 0;
+  text-align: center;
+  font-variant: small-caps;
+  padding: 1em 0;
+}
+
+#justInCase hr {
+  width: 80vw;
+  margin: 0 auto;
+  border-bottom: #99BB00 solid 3px;
+}
+
+#justInCase img {
+  width: 93px;
+  height: 200px;
+  margin: 0 2px;
+  padding: 2px;
+  border: #99BB00 solid 2px;
+  margin-bottom: 1em;
+}
+
+#justInCase div {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 3em .5em;
+}
+
+.desktop-menus {
+  display: none;
+}
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	max-width: 95%;
+	max-height: 95%;
+	margin-top: 2.5%;
+}
+
+.lightbox:target {
+	outline: none;
+	display: block;
+}
+
+@media (max-width: 350px) {
+  #justInCase p {
+    font-size: .9em;
+  }
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+/* ----- Wide Queries ------------------------------------------------------ */
+/* ------------------------------------------------------------------------- */
+
+@media (min-width: 600px) {
+
+  .food-category h2, .toggle-icon {
+    font-size: 1.5em;
+    padding: .5em 0;
+  }
+  .food-type-container button {
+    margin: 2em 1em;
+  }
+
+  .toggle-description {
+    font-size: .75em;
+    left: 90%;
+    transform: translateX(-90%);
+    top: 93%;
+    transform: translateY(-93%);
+    padding-right: 5px
+  }
+  .toggle-description:before{
+    border-top:18px solid transparent;
+    border-right: 49px solid #000;
+    position:absolute;
+    z-index: -1;
+    right: 100%;
+    top:-3px;
+  }
+  .toggle-description:after{
+    border-top:18px solid #000;
+    border-right: 44px solid #000;
+    position:absolute;
+    z-index: -1;
+    left: 100%;
+    transform: translateX(-100%);
+    top:-3px;
+  }
+
+  .toggle-desc-underlay {
+    font-size: .75em;
+    left: 90%;
+    transform: translateX(-90%);
+    top: 91%;
+    transform: translateY(-91%);
+    padding-right: 5px
+  }
+  .toggle-desc-underlay:before{
+    border-top:18px solid transparent;
+    border-right: 50px solid #DDD;
+    position:absolute;
+    right: 100%;
+    top:-2.5px;
+  }
+  .toggle-desc-underlay:after{
+    border-top:17px solid #DDD;
+    border-right: 45px solid #DDD;
+    left: 103%;
+    transform: translateX(-100%);
+    top:-2px;
+    z-index: -1;
+  }
+
+  .food-categories img:nth-of-type(1) {
+    width: 100px;
+    height: 100px;
+  }
+
+  .food-categories h3 {
+    font-size: 1.5em;
+
+  }
+
+
+  .food-categories li p:nth-of-type(1) {
+    display: none;
+    font-size: 1.3em;
+    padding: 0.1em;
+    text-align: center;
+    margin-left: 9em;
+    padding-bottom: 2em;
+    border-bottom: #99BB00 solid 3px;
+    margin-bottom: 0;
+
+  }
+  .food-categories li p:nth-of-type(2) {
+    display: none;
+    font-size: 1.25em;
+    padding-bottom: 1em;
+    margin-left: 9em;
+    margin-top: 2em;
+  }
+  .food-categories li span {
+    display: block;
+    padding-bottom: 2em;
+  }
+
+  .food-categories table {
+    margin-left: .9em;
+    margin-right: .5em;
+    margin-bottom: 0;
+    padding-top: 1em;
+    border-top: #99BB00 double 7px;
+    margin-top: 1em;
+  }
+  .food-categories table th, .food-categories table td {
+    padding: .5em;
+    padding-left: .7em;
+    font-size: 1.3em;
+  }
+
+  .food-categories img:nth-of-type(2) {
+    width: 10%;
+    margin: auto .75em;
+  }
+
+  .food-categories ul {
+    padding: 0 3em;
+  }
+
+}
+
+/* ------------------------------------------------------------------------- */
+/* ----- Desktop Queries --------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+@media (min-width: 900px) {
+  .food-type-container {
+    background: black;
+    border-top: white solid 2px;
+    border-bottom: white solid 2px;
+  }
+  .hero-wrapper-overlay p {
+    font-size: 1em;
+  }
+  .hero-wrapper-overlay h1 {
+    font-size: 4em;
+  }
+  .desktop-content {
+    margin-right: 4em;
+    border-right: white solid 5px;
+  }
+  footer {
+    border-right: black solid 5px;
+  }
+  .mobile-menus {
+    display: none;
+  }
+  .desktop-menus {
+    display: block;
+  }
+  #justInCase {
+    padding: 4em 0;
+  }
+  #justInCase img {
+    width: 150px;
+    height: 90px;
+  }
+
+}

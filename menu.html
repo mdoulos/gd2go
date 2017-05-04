@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+  <title>gd2go</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/commonstyle.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <header class="top-nav-bar">
+    <a href="index.html">
+      <img class="logo" src="images/gd2go-logo-mobile.svg" alt="gd2go-logo">
+    </a>
+    <button class="hamburger">&#9776;</button>
+  </header>
+  <div class="center-desktop">
+    <div class="desktop-content">
+      <div class="desktop-flex">
+        <div class='hidden-navigation desktop-navigation'>
+          <a href="index.html" class="logo-link-desktop">
+            <img class="desktop-logo" src="images/gd2go-logo-desktop.png" alt="gd2go-logo">
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store-hours.html">Store Hours</a></li>
+            <li id='selectedPage'><a href="menu.html">→ Main Street Menu ←</a></li>
+            <li><a href="university-menu.html">University Menu</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="catering.html">Food4thought</a></li>
+          </ul>
+          <div class="social-media-icons-desktop">
+            <div><a href='https://www.facebook.com/healthyfoodfast'><img src="images/facebook-logo.svg" alt="gd2go-facebook-button"></a></div>
+            <div><a href='https://twitter.com/gd2go_northbay?lang=en'><img src="images/twitter-logo.svg" alt="gd2go-twitter-button"></a></div>
+          </div>
+          <div class="social-media-icons-desktop">
+            <div><a href='https://www.zomato.com/north-bay-on/gd2go-healthy-food-fast-north-bay'><img src="images/urbanspoon-logo.svg" alt="gd2go-urbanspoon-button"></a></div>
+            <div><a href='https://www.yelp.ca/biz/gd2go-north-bay'><img src="images/yelp-logo.svg" alt="gd2go-yelp-button"></a></div>
+          </div>
+        </div>
+        <div class='hide-when-nav-open'>
+          <div class="hero-wrapper">
+            <a href='university-menu.html'><div class="hero-wrapper-overlay">
+              <p class="location-name">Main Street</p>
+              <h1>Menu</h1>
+              <p class="change-location">(click here to change location)</p>
+            </div></a>
+            <p class="toggle-desc-underlay">FILTER</p>
+            <p class="toggle-description">FILTER</p>
+          </div>
+          <hr>
+          <section class="food-type-container">
+            <button class="gluten-free-toggle"><p>GLUTEN FREE</p></button>
+            <button class="vegan-toggle"><p>VEGAN</p></button>
+            <button class="vegetarian-toggle"><p>VEGETARIAN</p></button>
+            <button class="alt-menu-style-toggle"><p>ALT MENU STYLE</p></button>
+          </section>
+          <hr>
+          <section class="food-categories">
+            <div id="salads" class="food-category"><h2>Salads</h2><button class="toggle-icon">+</button></div>
+                    <div id="saladsIntro">
+                      <p>Delicious salads to give you the energy you need.</p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="alt-menu-intro" id="firstAltMenuIntro">
+                      <p>↓ Salads ↓</p>
+                    </div>
+                    <ul id="saladsList">
+                      <li class="not-vegetarian not-vegan">
+                        <img src="food-images/chicken-salad.jpg" alt="photo of a delicious chicken salad">
+                        <h3>Chicken Salad</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>Slow roasted free-run chicken, cooked to excellence and paired with a fresh lettuce and spring blend.</p>
+                        <hr>
+                        <p>Main Ingredients: chicken, lettuce, parsley, almonds, mayonnaise</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegan">
+                        <img src="food-images/caeser-salad.jpg" alt="photo of a delicious caesar salad">
+                        <h3>Caesar Salad</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>7.25</td><td>5.25</td></tr>
+                        </table>
+                        <p>Our caesar salad provides a nutritious meal with an amazingly delectible taste. When in Rome, enjoy salad!</p>
+                        <hr>
+                        <p>Main Ingredients: parmesan, lettuce, garlic, caesar dressing, chicken</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/oven-roasted-vegetable-salad.jpg" alt="photo of a delicious oven roasted vegetable salad">
+                        <h3>Oven Roasted <br>Vegetable</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>7.50</td><td>5.50</td></tr>
+                        </table>
+                        <p>Enjoy the heat of our oven roasted vegetable salad which is slowly roasted to fresh garden quality goodness.</p>
+                        <hr>
+                        <p>Main Ingredients: eggplant, squash, asparagus, bell pepper, garlic</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegan">
+                        <img src="food-images/greek-salad.jpg" alt="photo of a delicious greek salad">
+                        <h3>Greek Salad</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.00</td><td>6.00</td></tr>
+                        </table>
+                        <p>The taste of the Mediterranean is yours to enjoy with this Greek blend of fresh vegetables and feta cheese.</p>
+                        <hr>
+                        <p>Main Ingredients: tomatoes, lettuce, feta cheese, onion, olives</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegetarian not-vegan">
+                        <img src="food-images/signature-salad.jpg" alt="photo of a delicious signature salad">
+                        <h3>Signature Salad</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>9.50</td><td>N/A</td></tr>
+                        </table>
+                        <p>Free-run chicken &amp; farm fresh egg come together with a delicious set of ingredients to create our own salad.</p>
+                        <hr>
+                        <p>Main Ingredients: chicken, egg, lettuce, olives, honey dijon dressing</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                    </ul>
+                    <div class="arrow-up"></div>
+                    <div id="saladsOutro" class="outro">
+                      <p>Add Cheese for $1.50</p>
+                      <p>(Goat Cheese, Feta, Parmigiano, or Mozzarella)</p>
+                    </div>
+            <div id="wraps" class="food-category"><h2>Wraps</h2><button class="toggle-icon">+</button></div>
+                    <div id="wrapsIntro">
+                      <p>gd2go wraps, panini, and burritos.</p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="alt-menu-intro">
+                      <p>↓ Wraps ↓</p>
+                    </div>
+                    <ul id="wrapsList">
+                      <li class="not-vegetarian not-vegan">
+                        <img src="food-images/chicken-salad-wrap.jpg" alt="a placeholder photo">
+                        <h3>Chicken</h3>
+                        <table>
+                          <tr><th>Wrap</th><th>Panini</th></tr>
+                          <tr><td>8.50</td><td>9.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/oven-roasted-vegetable-wrap.jpg" alt="a placeholder photo">
+                        <h3>Oven Roasted Vegetable</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegan not-gluten-free">
+                        <img src="food-images/caesar-salad-wrap.jpg" alt="a placeholder photo">
+                        <h3>Caesar</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegan not-gluten-free">
+                        <img src="food-images/greek-salad-wrap.jpg" alt="a placeholder photo">
+                        <h3>Greek</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegan not-gluten-free not-vegetarian">
+                        <img src="food-images/signature-salad-wrap.jpg" alt="a placeholder photo">
+                        <h3>Signature</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegan not-gluten-free">
+                        <img src="food-images/peanut-butter-banana-wrap.jpg" alt="a placeholder photo">
+                        <h3>Peanut Butter &amp; Banana</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegan not-gluten-free">
+                        <img src="food-images/breakfast-burrito.jpg" alt="a placeholder photo">
+                        <h3>Breakfast Burrito</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegan not-gluten-free">
+                        <img src="food-images/chili-burrito.jpg" alt="a placeholder photo">
+                        <h3>Chili Burrito</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegan not-vegetarian not-gluten-free">
+                        <img src="food-images/chicken-chili-burrito.jpg" alt="a placeholder photo">
+                        <h3>Chicken Chili Burrito</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-gluten-free not-vegan">
+                        <img src="food-images/grilled-quesadilla.jpg" alt="a placeholder photo">
+                        <h3>Grilled Quesadilla Roll</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                    </ul>
+                    <div class="arrow-up"></div>
+                    <div id="wrapsOutro" class="outro">
+                      <p>Add Cheese for $1.50</p>
+                      <p>(Goat Cheese, Feta, Parmigiano, or Mozzarella)</p>
+                    </div>
+            <div id="bowls" class="food-category"><h2>Bowls</h2><button class="toggle-icon">+</button></div>
+                    <div id="bowlsIntro">
+                      <p>Organic quinoa, noodles, &amp; chili bowls.</p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="alt-menu-intro">
+                      <p>↓ Bowls ↓</p>
+                    </div>
+                    <ul id="bowlsList">
+                      <li>
+                        <img src="food-images/quinoa-breakfast-bowl.jpg" alt="a placeholder photo">
+                        <h3>All-Day Breakfast Bowl</h3>
+                        <table>
+                          <tr><th>Price</th></tr>
+                          <tr><td>7.50</td></tr>
+                        </table>
+                        <p>Organic quinoa with your choice of 4 fruits, nuts, or seeds. Plus Greek or Source yogurt &amp; maple syrup, Board's honey, coconut oil or in-house peanut butter.</p>
+                        <hr>
+                        <p>Main Ingredients: Organic quinoa, fruits, nuts, seeds, yogurt, maple syrup, honey, coconut oil, peanut butter.</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/quinoa-bowl.jpg" alt="a placeholder photo">
+                        <h3>Original Quinoa Bowl</h3>
+                        <table>
+                          <tr><th>Price</th></tr>
+                          <tr><td>10.75</td></tr>
+                        </table>
+                        <p>A bed of fresh hot organic quinoa topped with your choice of protein, 6 toppings, and 2 dressings.</p>
+                        <hr>
+                        <p>Main Ingredients: Free run chicken, chicken salad, 2 farm-fresh eggs, roasted veggies, chili, non-GMO tofu.</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/miso-bowl.jpg" alt="a placeholder photo">
+                        <h3>Miso Noodle Bowl</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>Hot organic miso with gluten-free rice noodles, fresh bok choy, your choice of 3 additional vegetables &amp; a protein.</p>
+                        <hr>
+                        <p>Main Ingredients: Miso, rice noodles, bok choy, vegetables, non-GMO tofu, 2 farm-fresh eggs, free run chicken.</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/soup-of-the-day.jpg" alt="a placeholder photo">
+                        <h3>Soup of the Day</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>5.50</td><td>4.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegan not-vegetarian">
+                        <img src="food-images/chicken-chili.jpg" alt="a placeholder photo">
+                        <h3>Free Run Chicken Chili</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>6.50</td><td>5.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/vegan-chili.jpg" alt="a placeholder photo">
+                        <h3>Lean Mean Vegan Chili</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>5.50</td><td>4.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                    </ul>
+                    <div class="arrow-up"></div>
+                    <div id="bowlsOutro" class="outro">
+                      <p>Add Cheese for $1.50</p>
+                      <p>(Goat Cheese, Feta, Parmigiano, or Mozzarella)</p>
+                    </div>
+            <div id="smoothies" class="food-category"><h2>Smoothies</h2><button class="toggle-icon">+</button></div>
+                    <div id="smoothiesIntro">
+                      <p>Whole Fruit Smoothies</p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="alt-menu-intro">
+                      <p>↓ Smoothies ↓</p>
+                    </div>
+                    <ul id="smoothiesList">
+                      <li class="not-vegan">
+                        <img src="food-images/funky-monkey-smoothie.jpg" alt="a placeholder photo">
+                        <h3>Funky Monkey</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegan">
+                        <img src="food-images/tropical-smoothie.jpg" alt="a placeholder photo">
+                        <h3>Tropical Sunrise</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li class="not-vegan">
+                        <img src="food-images/bob-marley.jpg" alt="a placeholder photo">
+                        <h3>Bob Marley</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/the-hulk-smoothie.jpg" alt="a placeholder photo">
+                        <h3>The Hulk</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                    </ul>
+                    <div class="arrow-up"></div>
+                    <div id="smoothiesOutro" class="outro">
+                      <p>Add Cheese for $1.50</p>
+                      <p>(Goat Cheese, Feta, Parmigiano, or Mozzarella)</p>
+                    </div>
+            <div id="other" class="food-category"><h2>Other</h2><button class="toggle-icon">+</button></div>
+                    <div id="otherIntro">
+                      <p>gd2go drinks, cookies, and muffins.</p>
+                    </div>
+                    <div class="arrow-down"></div>
+                    <div class="alt-menu-intro">
+                      <p>↓ Drinks ↓</p>
+                    </div>
+                    <ul id="otherList">
+                      <li>
+                        <img src="food-images/coffee.jpg" alt="a placeholder photo">
+                        <h3>Coffee</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/espresso.jpg" alt="a placeholder photo">
+                        <h3>Espresso</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/tea.jpg" alt="a placeholder photo">
+                        <h3>Tea</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/orange-juice.jpg" alt="a placeholder photo">
+                        <h3>Orange Juice</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/apple-juice.jpg" alt="a placeholder photo">
+                        <h3>Apple Juice</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/carrot-juice.jpg" alt="a placeholder photo">
+                        <h3>Carrot Juice</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                      <li>
+                        <img src="food-images/kombucha.jpg" alt="a placeholder photo">
+                        <h3>Kombucha</h3>
+                        <table>
+                          <tr><th>BIG</th><th>LITE</th></tr>
+                          <tr><td>8.50</td><td>6.50</td></tr>
+                        </table>
+                        <p>This is a placeholder paragraph to hold the place of a food item until it can be replaced with relevant info.</p>
+                        <hr>
+                        <p>Main Ingredients: ingredient 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+                        <img src="images/tap-icon.png">
+                        <span></span>
+                      </li>
+                    </ul>
+                    <div class="arrow-up"></div>
+                    <div id="otherOutro" class="outro">
+                      <p>Healthier dairy-free alternatives and organic non-GMO sweetening options are available.</p>
+                      <p>We have locally produced honey and maple syrup.</p>
+                      <p>No artificial colours, flavours, or preservatives.</p>
+                      <p>Fresh-pressed juices &amp; lemonades.</p>
+                      <p>All made and bottled on site.</p>
+                    </div>
+          </section>
+          <div id="justInCase">
+            <hr>
+            <p>↓ or click to download our menu below ↓</p>
+            <div>
+              <a href='#gd2go-menu-a' class="mobile-menus"><img src="images/gd2go-menu-1-of-3.jpg"></a>
+              <a href='#gd2go-menu-b' class="mobile-menus"><img src="images/gd2go-menu-2-of-3.jpg"></a>
+              <a href='#gd2go-menu-c' class="mobile-menus"><img src="images/gd2go-menu-3-of-3.jpg"></a>
+              <a href='#gd2go-menu-desktop-a' class="desktop-menus"><img src="images/gd2go-menu-desktop-1-of-3.jpg"></a>
+              <a href='#gd2go-menu-desktop-b' class="desktop-menus"><img src="images/gd2go-menu-desktop-2-of-3.jpg"></a>
+              <a href='#gd2go-menu-desktop-c' class="desktop-menus"><img src="images/gd2go-menu-desktop-3-of-3.jpg"></a>
+            </div>
+            <hr>
+          </div>
+          <a href="#_" class="lightbox" id="gd2go-menu-a"><img src="images/gd2go-menu-1-of-3.jpg"></a>
+          <a href="#_" class="lightbox" id="gd2go-menu-b"><img src="images/gd2go-menu-2-of-3.jpg"></a>
+          <a href="#_" class="lightbox" id="gd2go-menu-c"><img src="images/gd2go-menu-3-of-3.jpg"></a>
+          <a href="#_" class="lightbox" id="gd2go-menu-desktop-a"><img src="images/gd2go-menu-desktop-1-of-3.jpg"></a>
+          <a href="#_" class="lightbox" id="gd2go-menu-desktop-b"><img src="images/gd2go-menu-desktop-2-of-3.jpg"></a>
+          <a href="#_" class="lightbox" id="gd2go-menu-desktop-c"><img src="images/gd2go-menu-desktop-3-of-3.jpg"></a>
+        </div>
+        </div>
+        <footer>
+          <div class="information">
+            <p>Weekdays 8am-8pm - Weekends 10am-4pm</p>
+            <p>496 Main St E, North Bay, Ontario - (705) 223-4246</p>
+          </div>
+          <div class="social-media-icons">
+            <div><a href='https://www.facebook.com/healthyfoodfast'><img src="images/facebook-logo.svg" alt="gd2go-facebook-button"></a></div>
+            <div><a href='https://twitter.com/gd2go_northbay?lang=en'><img src="images/twitter-logo.svg" alt="gd2go-twitter-button"></a></div>
+            <div><a href='https://www.zomato.com/north-bay-on/gd2go-healthy-food-fast-north-bay'><img src="images/urbanspoon-logo.svg" alt="gd2go-urbanspoon-button"></a></div>
+            <div><a href='https://www.yelp.ca/biz/gd2go-north-bay'><img src="images/yelp-logo.svg" alt="gd2go-yelp-button"></a></div>
+          </div>
+          <div class="copyright">
+            <p>Copyright © 2017 gd2go - Healthy Food Fast. All rights reserved. <br class='hide-on-desktop'>Web Design by Studio Doulos</p>
+          </div>
+          <script src='js/navigation.js'></script>
+          <script src="js/custom.js"></script>
+          <script src="js/functions.js"></script>
+        </footer>
+    </div>
+  </div>
+</body>
+</html>
